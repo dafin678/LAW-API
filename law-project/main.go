@@ -11,7 +11,6 @@ type ATM struct {
 }
 
 func main() {
-	// Initialize the ATM instance
 	atm := ATM{
 		Accounts: map[string]float64{
 			"0001": 500.0,
@@ -19,7 +18,6 @@ func main() {
 			"0003": 750.0,
 		},
 	}
-	// Define the routes
 	router := gin.Default()
 
 	v1 := router.Group("/v1")
